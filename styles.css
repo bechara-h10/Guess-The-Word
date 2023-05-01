@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1565c0;
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+  height: max-content;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.inputs-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inputs-container input {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: solid 2px #ccc;
+  font-size: 20px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.guesses-container,
+.hint-container,
+.mistakes-container {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hint,
+.mistakes,
+.guesses {
+  text-transform: uppercase;
+}
+
+.guesses-container h3,
+.hint-container h3,
+.mistakes-container h3 {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reset-button,
+.hint-button {
+  padding: 15px 10px;
+  background-color: #1565c0;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color ease 500ms;
+  cursor: pointer;
+}
+
+.reset-button:hover,
+.hint-button:hover {
+  background-color: #0f7fff;
+}
